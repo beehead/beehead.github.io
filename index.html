@@ -1,32 +1,143 @@
-<!doctype html>
-<html lang=“en”>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title key="title">beehead</title>
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="the test page" />
-  <meta property="og:image" content="img/pic.png" />
-  <meta property="og:description" content="yet another personal page" />
-  <meta property="description" content="yet another personal page" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #35424a;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background-image: url('avatar.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            color: white;
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        #showcase p {
+            font-size: 20px;
+        }
+
+        .bio {
+            padding: 30px;
+            background-color: white;
+            color: #333;
+            text-align: left;
+        }
+
+        .bio h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .bio p {
+            font-size: 18px;
+          }
+    </style>
 </head>
 <body>
     <header>
-      <a href="https://beehead.github.io" target=><span><b>beehead</b></span></a>
-      <nav>
-        <a class="cv" href="https://linkedin.com" target=”_blank” style="float: right;"><span>CV</span> ↗</a>
-        <a class="code" href="https://github.com/beehead" target=”_blank” style="float: right;"><span>Code</span> ↗</a>
-      </nav>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">C</span> Costa</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="https://github.com/beehead">Home</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-  <div class="content">
-    <section id="Education">
+
+    <section id="showcase">
+        <div class="container">
+            <h1>C Costa</h1>
+            <p><Make it/p>
+        </div>
     </section>
-    <section id="Experience">
+
+    <section class="bio">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Searching for something good.
+            </p>
+            <h2>Contact</h2>
+            <p>
+                Email: your-email@example.com<br>
+                Github: <a href="https://github.com/beehead" target="_blank">@beehead</a><br>
+            </p>
+        </div>
     </section>
-    <section id="Interesting">
-    </section>
-  </div>
-  <footer>
-  </footer>
 </body>
+</html>
